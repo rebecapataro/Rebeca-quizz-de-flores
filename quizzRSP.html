@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz das Flores 🌸</title>
+
+    <link rel="stylesheet" href="quizzRSP.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-flower flower1">✿</div>
+    <div class="background-flower flower2">❀</div>
+    <div class="background-flower flower3">✿</div>
+
+    <main class="container">
+
+        <!-- TELA INICIAL -->
+        <section id="startScreen" class="screen active">
+
+            <div class="hero-icon">🌷</div>
+
+            <p class="tag">QUIZ INTERATIVO</p>
+
+            <h1>Quiz das<br><span>Flores</span></h1>
+
+            <p class="description">
+                Teste seus conhecimentos sobre flores,
+                plantas e curiosidades do mundo natural.
+            </p>
+
+            <div class="info-cards">
+
+                <div class="info-card">
+                    <strong>10</strong>
+                    <span>Perguntas</span>
+                </div>
+
+                <div class="info-card">
+                    <strong>🌸</strong>
+                    <span>Flores</span>
+                </div>
+
+                <div class="info-card">
+                    <strong>⭐</strong>
+                    <span>Pontuação</span>
+                </div>
+
+            </div>
+
+            <button id="startButton" class="main-button">
+                Começar o Quiz
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <!-- TELA DO QUIZ -->
+        <section id="quizScreen" class="screen">
+
+            <header class="quiz-header">
+
+                <div>
+                    <p class="question-label">PERGUNTA</p>
+
+                    <div class="question-number">
+                        <span id="currentQuestion">1</span>
+                        <span class="separator">/</span>
+                        <span id="totalQuestions">10</span>
+                    </div>
+                </div>
+
+                <div class="score-box">
+                    <span>🌼</span>
+                    <strong id="score">0</strong>
+                    <small>pontos</small>
+                </div>
+
+            </header>
+
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <div id="questionImage" class="question-image">
+                    🌺
+                </div>
+
+                <h2 id="questionText">
+                    Qual é a pergunta?
+                </h2>
+
+                <div id="answers" class="answers">
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TELA FINAL -->
+        <section id="resultScreen" class="screen">
+
+            <div class="result-flower">🌻</div>
+
+            <p class="tag">QUIZ FINALIZADO!</p>
+
+            <h1>Seu resultado</h1>
+
+            <div class="result-circle">
+
+                <span id="finalScore">0</span>
+                <small>pontos</small>
+
+            </div>
+
+            <h2 id="resultMessage">
+                Muito bem!
+            </h2>
+
+            <p id="resultDetails">
+                Você respondeu corretamente.
+            </p>
+
+            <div class="result-stats">
+
+                <div>
+                    <strong id="correctAnswers">0</strong>
+                    <span>Acertos</span>
+                </div>
+
+                <div>
+                    <strong id="wrongAnswers">0</strong>
+                    <span>Erros</span>
+                </div>
+
+                <div>
+                    <strong id="percentage">0%</strong>
+                    <span>Aproveitamento</span>
+                </div>
+
+            </div>
+
+            <button id="restartButton" class="main-button">
+                Jogar novamente
+                <span>↻</span>
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Quiz das Flores • Aprender também pode ser divertido 🌿</p>
+    </footer>
+
+    <script src="quizzRSP.js"></script>
+
+</body>
+</html>
